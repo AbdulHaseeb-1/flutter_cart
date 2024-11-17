@@ -4,7 +4,7 @@ final lightTheme = ThemeData(
     brightness: Brightness.light,
     useMaterial3: true,
     appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.green,
+      backgroundColor: Color.fromARGB(255, 44, 44, 44),
       foregroundColor: Colors.white,
     ),
     primaryColor: Colors.black);
@@ -13,12 +13,12 @@ final darkTheme = ThemeData(
     brightness: Brightness.dark,
     useMaterial3: true,
     appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.green,
+      backgroundColor: Color.fromARGB(255, 0, 0, 0),
       foregroundColor: Colors.white,
     ),
     canvasColor: const Color.fromARGB(255, 19, 20, 29),
     primaryColor: Colors.white,
-    scaffoldBackgroundColor: const Color.fromARGB(255, 19, 20, 29),
+    scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0),
     bottomSheetTheme: const BottomSheetThemeData(backgroundColor: Colors.black),
     inputDecorationTheme: const InputDecorationTheme(
       hintStyle: TextStyle(color: Colors.white),

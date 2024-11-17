@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:state_test/constants/products.dart';
-import 'package:state_test/main.dart';
 import 'package:state_test/models/cart.dart';
 import 'package:state_test/providers/cart_provider.dart';
 import 'package:state_test/providers/theme_provider.dart';
@@ -14,7 +12,6 @@ class HomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final itemList = ref.read(itemProvider.notifier);
-    final theme = Theme.of(context);
 
     return Scaffold(
       appBar: AppBar(title: const Text("Shopping Market"), actions: [
